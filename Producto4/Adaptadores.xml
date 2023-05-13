@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<network_adapter>
+	<nombredaptador>"Wi-Fi"</nombredaptador>
+	<ip_address>192.168.1.131</ip_address>
+	<subnet_mask>255.255.255.0</subnet_mask>
+	<gateway>192.168.1.1</gateway>
+	<dns_server> 8.8.8.8</dns_server>
+	<velocidad>12</velocidad>
+	<ipsalto>192.168.1.1</ipsalto>
+	<ipsalto>10.71.0.1</ipsalto>
+	<ipsalto>10.14.3.57</ipsalto>
+	<ipsalto>209.85.168.54</ipsalto>
+	<ipsalto>74.125.242.177</ipsalto>
+	<ipsalto>74.125.253.203</ipsalto>
+	<ipsalto>8.8.8.8</ipsalto>
+	<numsaltos>7</numsaltos>
+</network_adapter>

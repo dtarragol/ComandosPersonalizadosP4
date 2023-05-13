@@ -1,0 +1,102 @@
+
+Configuraci¢n IP de Windows
+
+   Nombre de host. . . . . . . . . : cortana
+   Sufijo DNS principal  . . . . . : 
+   Tipo de nodo. . . . . . . . . . : h¡brido
+   Enrutamiento IP habilitado. . . : no
+   Proxy WINS habilitado . . . . . : no
+
+Adaptador de Ethernet Ethernet:
+
+   Estado de los medios. . . . . . . . . . . : medios desconectados
+   Sufijo DNS espec¡fico para la conexi¢n. . : 
+   Descripci¢n . . . . . . . . . . . . . . . : Realtek PCIe GbE Family Controller
+   Direcci¢n f¡sica. . . . . . . . . . . . . : B4-A9-FC-2B-6F-0A
+   DHCP habilitado . . . . . . . . . . . . . : s¡
+   Configuraci¢n autom tica habilitada . . . : s¡
+
+Adaptador de Ethernet Ethernet 3:
+
+   Sufijo DNS espec¡fico para la conexi¢n. . : 
+   Descripci¢n . . . . . . . . . . . . . . . : VirtualBox Host-Only Ethernet Adapter
+   Direcci¢n f¡sica. . . . . . . . . . . . . : 0A-00-27-00-00-16
+   DHCP habilitado . . . . . . . . . . . . . : no
+   Configuraci¢n autom tica habilitada . . . : s¡
+   V¡nculo: direcci¢n IPv6 local. . . : fe80::80f5:cead:16c9:d872%22(Preferido) 
+   Direcci¢n IPv4. . . . . . . . . . . . . . : 192.168.56.1(Preferido) 
+   M scara de subred . . . . . . . . . . . . : 255.255.255.0
+   Puerta de enlace predeterminada . . . . . : 
+   IAID DHCPv6 . . . . . . . . . . . . . . . : 789184551
+   DUID de cliente DHCPv6. . . . . . . . . . : 00-01-00-01-29-E9-7C-FA-40-74-E0-90-F3-F8
+   NetBIOS sobre TCP/IP. . . . . . . . . . . : habilitado
+
+Adaptador de LAN inal mbrica Conexi¢n de  rea local* 1:
+
+   Estado de los medios. . . . . . . . . . . : medios desconectados
+   Sufijo DNS espec¡fico para la conexi¢n. . : 
+   Descripci¢n . . . . . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter
+   Direcci¢n f¡sica. . . . . . . . . . . . . : 40-74-E0-90-F3-F9
+   DHCP habilitado . . . . . . . . . . . . . : s¡
+   Configuraci¢n autom tica habilitada . . . : s¡
+
+Adaptador de LAN inal mbrica Conexi¢n de  rea local* 2:
+
+   Estado de los medios. . . . . . . . . . . : medios desconectados
+   Sufijo DNS espec¡fico para la conexi¢n. . : 
+   Descripci¢n . . . . . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter #2
+   Direcci¢n f¡sica. . . . . . . . . . . . . : 42-74-E0-90-F3-F8
+   DHCP habilitado . . . . . . . . . . . . . : no
+   Configuraci¢n autom tica habilitada . . . : s¡
+
+Adaptador de LAN inal mbrica Wi-Fi:
+
+   Sufijo DNS espec¡fico para la conexi¢n. . : 
+   Descripci¢n . . . . . . . . . . . . . . . : Intel(R) Wi-Fi 6 AX201 160MHz
+   Direcci¢n f¡sica. . . . . . . . . . . . . : 40-74-E0-90-F3-F8
+   DHCP habilitado . . . . . . . . . . . . . : s¡
+   Configuraci¢n autom tica habilitada . . . : s¡
+   Direcci¢n IPv6 . . . . . . . . . . : 2a0c:5a84:e20e:7f00:6274:7cdf:88d7:d99e(Preferido) 
+   Direcci¢n IPv6 temporal. . . . . . : 2a0c:5a84:e20e:7f00:c36:a741:44e8:e336(Obsoleto) 
+   Direcci¢n IPv6 temporal. . . . . . : 2a0c:5a84:e20e:7f00:9477:346e:dbae:44b3(Preferido) 
+   V¡nculo: direcci¢n IPv6 local. . . : fe80::98a1:cf12:e17:4a53%20(Preferido) 
+   Direcci¢n IPv4. . . . . . . . . . . . . . : 192.168.1.133(Preferido) 
+   M scara de subred . . . . . . . . . . . . : 255.255.255.0
+   Concesi¢n obtenida. . . . . . . . . . . . : domingo, 18 de diciembre de 2022 9:40:51
+   La concesi¢n expira . . . . . . . . . . . : mi‚rcoles, 21 de diciembre de 2022 5:31:01
+   Puerta de enlace predeterminada . . . . . : fe80::1%20
+                                       192.168.1.1
+   Servidor DHCP . . . . . . . . . . . . . . : 192.168.1.1
+   IAID DHCPv6 . . . . . . . . . . . . . . . : 138441952
+   DUID de cliente DHCPv6. . . . . . . . . . : 00-01-00-01-29-E9-7C-FA-40-74-E0-90-F3-F8
+   Servidores DNS. . . . . . . . . . . . . . : 2a0c:5a80:0:2::1
+                                       2a0c:5a84:0:2::1
+                                       fe80::1%20
+                                       100.90.1.1
+                                       100.100.1.1
+                                       192.168.1.1
+   NetBIOS sobre TCP/IP. . . . . . . . . . . : habilitado
+
+Adaptador de Ethernet Conexi¢n de red Bluetooth:
+
+   Estado de los medios. . . . . . . . . . . : medios desconectados
+   Sufijo DNS espec¡fico para la conexi¢n. . : 
+   Descripci¢n . . . . . . . . . . . . . . . : Bluetooth Device (Personal Area Network)
+   Direcci¢n f¡sica. . . . . . . . . . . . . : 40-74-E0-90-F3-FC
+   DHCP habilitado . . . . . . . . . . . . . : s¡
+   Configuraci¢n autom tica habilitada . . . : s¡
+
+Adaptador de Ethernet vEthernet (Default Switch):
+
+   Sufijo DNS espec¡fico para la conexi¢n. . : 
+   Descripci¢n . . . . . . . . . . . . . . . : Hyper-V Virtual Ethernet Adapter
+   Direcci¢n f¡sica. . . . . . . . . . . . . : 00-15-5D-0F-6E-4B
+   DHCP habilitado . . . . . . . . . . . . . : no
+   Configuraci¢n autom tica habilitada . . . : s¡
+   V¡nculo: direcci¢n IPv6 local. . . : fe80::1208:f576:7b10:95af%26(Preferido) 
+   Direcci¢n IPv4. . . . . . . . . . . . . . : 172.26.176.1(Preferido) 
+   M scara de subred . . . . . . . . . . . . : 255.255.240.0
+   Puerta de enlace predeterminada . . . . . : 
+   IAID DHCPv6 . . . . . . . . . . . . . . . : 436213085
+   DUID de cliente DHCPv6. . . . . . . . . . : 00-01-00-01-29-E9-7C-FA-40-74-E0-90-F3-F8
+   NetBIOS sobre TCP/IP. . . . . . . . . . . : habilitado

@@ -1,0 +1,8 @@
+﻿  Funciones.c
+C:\Users\ciner\OneDrive\Escritorio\Producto4\Producto4\Producto4\Funciones.h(6,1): warning C4005: '_CRT_SECURE_NO_WARNINGS': redefinición de macro
+C:\Users\ciner\OneDrive\Escritorio\Producto4\Producto4\Producto4\Funciones.h(6,1): message : '_CRT_SECURE_NO_WARNINGS' declarado previamente en la línea de comandos
+C:\Users\ciner\OneDrive\Escritorio\Producto4\Producto4\Producto4\Funciones.c(92,42): warning C4047: '=': 'char' es distinto en los niveles de direccionamiento indirecto de 'char [2]'
+C:\Users\ciner\OneDrive\Escritorio\Producto4\Producto4\Producto4\Funciones.c(167,11): warning C4101: 'next_token2': variable local sin referencia
+C:\Users\ciner\OneDrive\Escritorio\Producto4\Producto4\Producto4\Funciones.c(166,11): warning C4101: 'next_token': variable local sin referencia
+C:\Users\ciner\OneDrive\Escritorio\Producto4\Producto4\Producto4\Funciones.c(219): warning C4172: devolución de dirección de la variable local o temporal: new_str
+  Producto4.vcxproj -> C:\Users\ciner\OneDrive\Escritorio\Producto4\Producto4\x64\Debug\Producto4.exe
