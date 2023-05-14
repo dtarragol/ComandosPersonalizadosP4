@@ -24,6 +24,9 @@ int main()
 
 	//la funcion verAdaptador que va a desencadenar 2 funciones mas para calcular la velocidad y los saltos.
 	verAdaptador(adaptador);
+
+	printf("\033[0;32m\nDurante el proceso, se han guardado los datos en AdaptadorDeRed.xml\n\033[0m");
+	printf("Cerrando el programa . . .\n");
 	
 	return 0;
 }

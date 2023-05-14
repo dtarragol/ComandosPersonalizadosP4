@@ -9,7 +9,7 @@ void adaptadores() {
 	char auxiliariliar[200];
 	FILE* ad;
 	fopen_s(&ad, "ipconfig.txt", "r");
-	printf("\033[0;35mADAPTADORES:\n");
+	printf("ADAPTADORES:\n\033[0;35m");
 	while (fgets(auxiliariliar, 200, ad))
 	{
 		if (strstr(auxiliariliar, "Adaptador"))
@@ -27,16 +27,16 @@ void verAdaptador(char* adaptador) {
     char buffer[200];
     char* memoria01, * memoria02, * memoriaSinSalto;
     char direccionDNS[200];
-    char XML[] = "Adaptadores.xml";
+    char XML[] = "AdaptadorDeRed.xml";
     char ref[] = ":";
     char* next_token;
 
     ad = fopen("ipconfig.txt", "r");
     datos = fopen(XML, "w");
     fputs("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<network_adapter>\n", datos);
-    
     fprintf(datos, "\t<nombredaptador>\"%s\"</nombredaptador>\n", adaptador);
     fgets(buffer, 200, ad);
+    printf("\nDatos del Adaptador \"%s\": \n", adaptador);
     if (ad == NULL) printf("documento no encontrado\n");
     else {
         while (fgets(buffer, 200, ad)) {
@@ -77,10 +77,8 @@ void verAdaptador(char* adaptador) {
                     fgets(buffer, 200, ad);
                 }
                 if ((memoria02 = strchr(memoria01, '\n')) != NULL) {
-                    
                     //quitando el salto de linea
                     memoriaSinSalto = quitarSaltoLinea(memoria01);
-                    
                     printf("Puerta predeterminada %s", memoriaSinSalto);
                     fprintf(datos, "\t<gateway>%s</gateway>\n", memoriaSinSalto);
                 }
@@ -91,23 +89,20 @@ void verAdaptador(char* adaptador) {
                     fgets(buffer, 200, ad);
                     direccionDNS[0] = " ";
                     strcpy(direccionDNS, &buffer[46]);
-
                 }
                 if ((memoria02 = strchr(memoria01, '\n')) != NULL) {
                     *memoria02 = '\0';
-
                     //Quitando salto de linea
                     memoriaSinSalto = quitarSaltoLinea(direccionDNS);
-
                     printf("Servidor DNS %s\033[0m", memoriaSinSalto);
                     fprintf(datos, "\t<dns_server>%s</dns_server>\n", memoriaSinSalto);
                 }
-                printf("\n\nCalculando velocidad %s . . .\n\n", direccionDNS);
+                printf("\n\n\033[0;32mCalculando velocidad %s . . .\n\n\033[0m", direccionDNS);
 
                 printf("Velocidad DNS \033[0;31m%d milisengundos\n\033[0m", calcularVelocidad(direccionDNS));
                 fprintf(datos, "\t<velocidad>%d</velocidad>\n", calcularVelocidad(memoria01));
                 printf_s("------------------------\n");
-                printf("\033[0;31mCalculando saltos\n. . .\n\n\033[0m");
+                printf("\033[0;32mCalculando saltos\n. . .\n\n\033[0m");
                 saltos(datos, memoria01);
                 printf_s("------------------------\n");
             }
@@ -118,7 +113,6 @@ void verAdaptador(char* adaptador) {
         remove("ipconfig.txt");
     }
 }
-
 //contar los saltos
 void saltos(FILE* docXML, char IP[]) {
     char auxiliar[200];
@@ -159,7 +153,6 @@ void saltos(FILE* docXML, char IP[]) {
     printf("DNS %s \033[0;31m%d saltos\n\033[0m", IP, s);
     fprintf(docXML, "\t<numsaltos>%d</numsaltos>\n", s);
 }
-
 //calcular velocidad de una direccion IP
 int calcularVelocidad(char DNS[200]) {
     char* next_token;
@@ -179,8 +172,6 @@ int calcularVelocidad(char DNS[200]) {
     com[strcspn(com, "\n")] = 0;
     strcat(com, comPing);
     system(com);
-
-
     f = fopen("PING.txt", "r");
     if (f == NULL) {
         printf("El archivo no existe\n");
@@ -206,7 +197,6 @@ int calcularVelocidad(char DNS[200]) {
 char* quitarSaltoLinea(char* linea) {
     char new_str[100];
     int j = 0;
-
     for (int i = 0; i < strlen(linea); i++) {
         if (linea[i] != '\n') {
             new_str[j] = linea[i];
@@ -214,6 +204,5 @@ char* quitarSaltoLinea(char* linea) {
         }
     }
     new_str[j] = '\0';
-
     return new_str;
 }
