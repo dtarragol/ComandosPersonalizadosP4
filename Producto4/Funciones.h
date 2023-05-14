@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -20,5 +19,5 @@ int calcularVelocidad(char DNS[200]);
 //contar los saltos
 void saltos(FILE* docXML, char IP[]);
 
-
+//quitar salto de linea de una cadena
 char* quitarSaltoLinea(char* linea);

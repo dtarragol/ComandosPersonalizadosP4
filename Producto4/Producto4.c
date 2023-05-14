@@ -1,4 +1,3 @@
-
 #include "Funciones.h"
 
 /*Aplicacion para generar un fichero XML a partir de los siguientes datos de los adaptadores
@@ -10,8 +9,8 @@ int main()
 {
 	char adaptador[50];
 	
-	printf_s("----PRODUCTO 4 COMANDOS PERSONALIZADOS(2023) - POR DIDAC TARRAGO LOPEZ----\n\n");
-	
+	printf_s("----\033[4mPRODUCTO 4 COMANDOS PERSONALIZADOS(2023)\033[0m----\n\tPor Didac Tarrago Lopez\n");
+	printf("Aplicacion que genera un fichero XML(AdaptadorDeRed.xml) a partir de los datos de un adaptador de red.\n\n");
 	//se llama una funcion para hacer un ipconfig y guardarlo en un txt:
 	guardarIPConfig();
 	
